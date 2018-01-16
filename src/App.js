@@ -35,7 +35,7 @@ class App extends Component {
             <TabPane tab="Amanda" key="amanda"><UserFlow /></TabPane>
           </Tabs>
           <Footer style={{ textAlign: 'center' }}>
-            Ant Design ©2016 Created by Ant UED
+            Skapad med Ant Design: https://ant.design/
         </Footer>
         </Layout>
       </Layout>
