@@ -26,7 +26,7 @@ const mockBlogs = [
   },
   {
     owner: 'amanda',
-    title: 'My first Blog',
+    title: 'Amandas Blog',
     text: 'Hamburg är det bästa som finns, mah god!',
     images:
       [
@@ -46,14 +46,13 @@ const BlogReducer = (state = mockBlogs, action) => {
 
   switch (action.type) {
 
-    // TODO: ADD IMAGES, ADD OWNERS
     case ADD_BLOG:
       return [
         {
           title: action.title,
           text: action.text,
           owner: action.owner,
-          images: []
+          images: action.images
         },
         ...state
       ]

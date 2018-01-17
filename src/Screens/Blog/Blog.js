@@ -4,7 +4,7 @@ import './Blog.css';
 
 const Blog = (props) => {
   const blogImages = props.images.map(image => {
-    return <BlogImage href={image.href} description={image.description} />
+    return <BlogImage key={image.href} href={image.href} description={image.description} />
   })
 
   return (
