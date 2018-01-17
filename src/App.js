@@ -14,19 +14,7 @@ class App extends Component {
   render() {
     return (
       <Layout>
-        <Sider style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }}>
-          <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="0"  > 
-              <span className="nav-text">Meny</span>
-            </Menu.Item>
-            <Menu.Item key="1">
-              <Icon type="user" />
-              <span className="nav-text">Bloggar</span>
-            </Menu.Item>
-          </Menu>
-        </Sider>
-        <Layout style={{ marginLeft: 200 }}>
+        <Layout>
           <Header style={{ background: '#fff', padding: 0 }} >
             <h1 style={{ textAlign: 'center' }}> Welcome to Rydhstad </h1>
           </Header>
